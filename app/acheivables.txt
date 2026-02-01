@@ -1,0 +1,6 @@
+No instruction to cite numbers carefully
+No warning about hallucinating financial data
+No handling of "I don't know" when context is insufficient
+
+- more type of inputs apart from pdfs
+- intyegrate the gradio ro streamlit

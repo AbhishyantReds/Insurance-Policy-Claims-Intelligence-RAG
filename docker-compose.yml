@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend
+  backend:
+    build: .
+    container_name: insurance-rag-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - HYBRID_SEARCH_ENABLED=true
+      - MONITORING_ENABLED=true
+    volumes:
+      - ./data:/app/data
+      - ./vectordb:/app/vectordb
+      - ./monitoring.db:/app/monitoring.db
+    command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - rag-network
+    restart: unless-stopped
+
+  # Gradio Frontend
+  frontend:
+    build: .
+    container_name: insurance-rag-frontend
+    ports:
+      - "7860:7860"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - API_URL=http://backend:8000
+    volumes:
+      - ./data:/app/data
+      - ./vectordb:/app/vectordb
+    command: python gradio_app.py
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - rag-network
+    restart: unless-stopped
+
+  # Standalone Gradio (for Hugging Face Spaces compatibility)
+  standalone:
+    build: .
+    container_name: insurance-rag-standalone
+    ports:
+      - "7861:7860"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./data:/app/data
+      - ./vectordb:/app/vectordb
+      - ./monitoring.db:/app/monitoring.db
+    command: python app.py
+    networks:
+      - rag-network
+    restart: unless-stopped
+    profiles:
+      - standalone
+
+networks:
+  rag-network:
+    driver: bridge
+
+volumes:
+  vectordb:
+  monitoring-data:
