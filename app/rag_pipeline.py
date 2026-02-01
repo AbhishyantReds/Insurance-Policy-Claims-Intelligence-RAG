@@ -358,26 +358,56 @@ def get_vectordb():
     )
 
 
+def detect_personal_query_intent(query: str) -> bool:
+    """
+    Detect if the query is asking about the user's personal policy.
+    
+    Args:
+        query: The user's question
+        
+    Returns:
+        True if query appears to be asking about personal policy, False otherwise
+    """
+    query_lower = query.lower()
+    
+    # Personal pronouns and phrases that indicate personal policy questions
+    personal_indicators = [
+        "my ", "am i ", "do i ", "does my", "is my", "will my",
+        "what is my", "what's my", "how much is my", 
+        "under my", "in my policy", "my coverage",
+        "i am ", "i have"
+    ]
+    
+    return any(indicator in query_lower for indicator in personal_indicators)
+
+
 def retrieve_with_metadata_filter(
     query: str,
     k: int = 6,
     policy_type: Optional[str] = None,
-    policy_number: Optional[str] = None
+    policy_number: Optional[str] = None,
+    prefer_personal: Optional[bool] = None
 ) -> List[Document]:
     """
     Retrieve documents with optional metadata filtering using hybrid search.
+    Automatically detects if query is personal and prioritizes accordingly.
     
     Args:
         query: The search query
         k: Number of results to return
         policy_type: Filter by policy type
         policy_number: Filter by policy number
+        prefer_personal: Whether to prioritize personal policy documents (auto-detected if None)
         
     Returns:
         List of relevant documents with relevance scores
     """
+    # Auto-detect if user is asking about personal policy
+    if prefer_personal is None:
+        prefer_personal = detect_personal_query_intent(query)
+    
     if HYBRID_SEARCH_ENABLED and os.path.exists(BM25_INDEX_PATH):
-        return _hybrid_retrieve(query, k, policy_type, policy_number)
+        return _hybrid_retrieve(query, k, policy_type, policy_number, prefer_personal)
     else:
         # Fallback to pure semantic search
         return _semantic_retrieve(query, k, policy_type, policy_number)
@@ -421,19 +451,22 @@ def _hybrid_retrieve(
     query: str,
     k: int = 6,
     policy_type: Optional[str] = None,
-    policy_number: Optional[str] = None
+    policy_number: Optional[str] = None,
+    prefer_personal: bool = True
 ) -> List[Document]:
     """
     Hybrid retrieval combining BM25 keyword search and semantic vector search.
+    NOW WITH DOCUMENT PRIORITIZATION: Personal policies boosted over default docs.
     
     Args:
         query: The search query
         k: Number of results to return
         policy_type: Filter by policy type
         policy_number: Filter by policy number
+        prefer_personal: Whether to boost personal policy scores (default: True)
         
     Returns:
-        List of documents ranked by hybrid score
+        List of documents ranked by hybrid score with prioritization
     """
     # Load BM25 index
     with open(BM25_INDEX_PATH, "rb") as f:
@@ -459,6 +492,9 @@ def _hybrid_retrieve(
     # Create hybrid scores
     doc_scores = {}
     
+    # Personal policy boost: 1.5x higher score for personal documents
+    PERSONAL_POLICY_BOOST = 1.5
+    
     # Add BM25 scores (normalized)
     max_bm25 = max(bm25_scores) if max(bm25_scores) > 0 else 1
     for idx in bm25_top_indices:
@@ -471,21 +507,35 @@ def _hybrid_retrieve(
         
         doc_id = f"{chunk.metadata.get('source', '')}_{chunk.page_content[:50]}"
         normalized_bm25 = bm25_scores[idx] / max_bm25
+        base_score = BM25_WEIGHT * normalized_bm25
+        
+        # Apply personal policy boost
+        is_personal = not chunk.metadata.get("is_default_doc", False)
+        boost = PERSONAL_POLICY_BOOST if (prefer_personal and is_personal) else 1.0
+        
         doc_scores[doc_id] = {
             "doc": chunk,
-            "score": BM25_WEIGHT * normalized_bm25
+            "score": base_score * boost,
+            "is_personal": is_personal
         }
     
     # Add semantic scores (already normalized by ChromaDB)
     for doc in semantic_docs:
         doc_id = f"{doc.metadata.get('source', '')}_{doc.page_content[:50]}"
+        
+        # Apply personal policy boost
+        is_personal = not doc.metadata.get("is_default_doc", False)
+        boost = PERSONAL_POLICY_BOOST if (prefer_personal and is_personal) else 1.0
+        semantic_score = SEMANTIC_WEIGHT * 1.0 * boost
+        
         if doc_id in doc_scores:
             # Combine scores
-            doc_scores[doc_id]["score"] += SEMANTIC_WEIGHT * 1.0  # Semantic gets 1.0
+            doc_scores[doc_id]["score"] += semantic_score
         else:
             doc_scores[doc_id] = {
                 "doc": doc,
-                "score": SEMANTIC_WEIGHT * 1.0
+                "score": semantic_score,
+                "is_personal": is_personal
             }
     
     # Sort by hybrid score and return top k
@@ -500,6 +550,7 @@ def _hybrid_retrieve(
     for item in sorted_docs:
         doc = item["doc"]
         doc.metadata["relevance_score"] = item["score"]
+        doc.metadata["is_personal_policy"] = item["is_personal"]
         results.append(doc)
     
     return results
@@ -508,34 +559,74 @@ def _hybrid_retrieve(
 def format_docs_with_citations(docs: List[Document]) -> str:
     """
     Format documents with section and source citations for the LLM context.
+    NOW CLEARLY LABELS PERSONAL vs DEFAULT DOCUMENTS.
     
     Args:
         docs: List of documents
         
     Returns:
-        Formatted string with citations
+        Formatted string with citations and document type labels
     """
+    # Separate personal policies from default docs
+    personal_docs = [doc for doc in docs if not doc.metadata.get("is_default_doc", False)]
+    default_docs = [doc for doc in docs if doc.metadata.get("is_default_doc", False)]
+    
     formatted_parts = []
-    for i, doc in enumerate(docs, 1):
-        source = str(doc.metadata.get("source", "Unknown"))
-        section = str(doc.metadata.get("section", ""))
-        page = doc.metadata.get("page", "")
-        policy_type = str(doc.metadata.get("policy_type", ""))
+    
+    # Format personal policies FIRST (higher priority)
+    if personal_docs:
+        formatted_parts.append("=" * 80)
+        formatted_parts.append("📄 PERSONAL POLICY DOCUMENTS (User's Actual Coverage)")
+        formatted_parts.append("=" * 80)
         
-        # Convert page to string (PDF loaders return int)
-        if page != "" and page is not None:
-            page = f"Page {page}" if isinstance(page, int) else str(page)
+        for i, doc in enumerate(personal_docs, 1):
+            source = str(doc.metadata.get("source", "Unknown"))
+            section = str(doc.metadata.get("section", ""))
+            page = doc.metadata.get("page", "")
+            policy_type = str(doc.metadata.get("policy_type", ""))
+            policy_number = doc.metadata.get("policy_number", "")
+            
+            if page != "" and page is not None:
+                page = f"Page {page}" if isinstance(page, int) else str(page)
+            
+            citation_parts = [f"[PERSONAL POLICY | Source: {source}"]
+            if policy_number:
+                citation_parts.append(f"Policy #: {policy_number}")
+            if policy_type:
+                citation_parts.append(f"Type: {policy_type}")
+            if section:
+                citation_parts.append(str(section))
+            if page:
+                citation_parts.append(str(page))
+            citation = ", ".join(citation_parts) + "]"
+            
+            formatted_parts.append(f"\n--- Personal Policy Document {i} {citation} ---\n{doc.page_content}")
+    
+    # Format default docs SECOND (educational context)
+    if default_docs:
+        formatted_parts.append("\n" + "=" * 80)
+        formatted_parts.append("📚 GENERAL INSURANCE GUIDES (Educational Reference Only)")
+        formatted_parts.append("=" * 80)
         
-        citation_parts = [f"[Source: {source}"]
-        if policy_type:
-            citation_parts.append(f"Policy Type: {policy_type}")
-        if section:
-            citation_parts.append(str(section))
-        if page:
-            citation_parts.append(str(page))
-        citation = ", ".join(citation_parts) + "]"
-        
-        formatted_parts.append(f"--- Document {i} {citation} ---\n{doc.page_content}")
+        for i, doc in enumerate(default_docs, 1):
+            source = str(doc.metadata.get("source", "Unknown"))
+            section = str(doc.metadata.get("section", ""))
+            page = doc.metadata.get("page", "")
+            policy_type = str(doc.metadata.get("policy_type", ""))
+            
+            if page != "" and page is not None:
+                page = f"Page {page}" if isinstance(page, int) else str(page)
+            
+            citation_parts = [f"[GENERAL GUIDE | Source: {source}"]
+            if policy_type:
+                citation_parts.append(f"Type: {policy_type}")
+            if section:
+                citation_parts.append(str(section))
+            if page:
+                citation_parts.append(str(page))
+            citation = ", ".join(citation_parts) + "]"
+            
+            formatted_parts.append(f"\n--- General Guide {i} {citation} ---\n{doc.page_content}")
     
     return "\n\n".join(formatted_parts)
 

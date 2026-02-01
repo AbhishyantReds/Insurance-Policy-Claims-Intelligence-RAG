@@ -53,19 +53,43 @@ def query_insurance(question: str) -> str:
         # Create prompt
         prompt = ChatPromptTemplate.from_messages([
             ("system", """You are an expert insurance policy analyst. Answer questions based ONLY on the provided policy documents.
-            
-Instructions:
-- Provide specific, accurate answers with coverage amounts, limits, deductibles, and exclusions when mentioned
-- Quote relevant policy text when appropriate
-- If information is not in the documents, say so clearly
-- For coverage questions, specify whether it's covered, partially covered, or excluded
-- Reference the specific policy section when available"""),
+
+**CRITICAL PRIORITIZATION RULES:**
+
+1. **Personal Policy Documents Take Priority**: If the user asks about "my policy", "am I covered", "what is my [X]", ALWAYS prioritize information from **PERSONAL POLICY DOCUMENTS** (clearly marked) over general insurance guides.
+
+2. **Identify Document Types**: 
+   - **Personal Policies**: Contain specific policy numbers, policyholder names, and exact coverage amounts - these are the user's ACTUAL policies
+   - **General Guides**: Provide educational/typical information - these are NOT the user's actual policy
+   - **When both types are present**: Cite personal policy information first and use general guides only for additional context
+
+3. **Answer Specificity**:
+   - For "my/am I/do I" questions: Extract SPECIFIC details from personal policy documents (policy numbers, exact limits, actual deductibles, named insureds)
+   - For general questions: Use general insurance guides
+   - If personal policy exists but doesn't contain the answer, state: "Your policy documents don't specify [X], but typically in insurance..."
+
+4. **Coverage Determination**:
+   - State clearly if something IS covered, IS NOT covered, or has LIMITED coverage
+   - Quote exact policy language for exclusions and limitations
+   - Cite specific coverage amounts and limits when available
+   - Mention deductibles that apply
+
+5. **Source Citation**: Always indicate whether information comes from the user's personal policy or general insurance knowledge
+
+**Instructions**:
+- Provide specific, accurate answers with coverage amounts, limits, deductibles, and exclusions
+- Quote relevant policy text when appropriate, use quotation marks
+- If information is not in the documents, say so clearly - DO NOT make up information
+- For coverage questions, specify: covered/partially covered/excluded and under what conditions
+- Reference policy sections, pages, or clause numbers when available
+- Use clear formatting: bullet points for lists, bold for key terms
+- If multiple policies apply, compare and contrast them"""),
             ("user", """Policy Documents:
 {context}
 
 Question: {question}
 
-Provide a clear, detailed answer based on the policy documents above.""")
+Provide a clear, detailed answer. If this is a personal policy question (contains "my", "I am", "am I", "do I"), prioritize personal policy documents in your answer.""")
         ])
         
         # Create chain
@@ -119,12 +143,22 @@ def check_coverage(scenario: str) -> str:
         prompt = ChatPromptTemplate.from_messages([
             ("system", """You are an insurance policy expert. Analyze whether a scenario is covered based on the policy documents.
 
+**PRIORITY**: If personal policy documents are provided (marked as "PERSONAL POLICY"), base your analysis on those. General guides are for context only.
+
+**Analysis Steps**:
+1. Determine if scenario is COVERED, EXCLUDED, or PARTIALLY COVERED
+2. Quote specific policy language supporting your determination
+3. Identify relevant deductibles, sub-limits, or conditions
+4. Cite exact policy section/clause
+
 Return a JSON response with:
-- is_covered: boolean indicating coverage
-- coverage_determination: detailed explanation
-- coverage_limit: any applicable limits (or empty string)
-- deductible: any applicable deductible (or empty string)
-- policy_section: relevant section reference (or empty string)"""),
+- is_covered: boolean (true if covered or partially covered, false if excluded)
+- coverage_determination: detailed explanation with policy quotes and confidence level (HIGH/MEDIUM/LOW)
+- coverage_limit: any applicable limits or "Not specified"
+- deductible: any applicable deductible or "Not specified"
+- policy_section: relevant section reference or "Not specified"
+
+BE SPECIFIC: Use exact policy language and numbers when available."""),
             ("user", """Policy Documents:
 {context}
 
@@ -184,15 +218,26 @@ def compare_policies(comparison_query: str) -> str:
         prompt = ChatPromptTemplate.from_messages([
             ("system", """You are an insurance policy comparison expert. Compare the requested aspect across all available policies.
 
-Format your response as:
-1. A comparison table or structured list showing the aspect for each policy type
-2. A summary highlighting key differences and similarities"""),
+**Instructions**:
+1. Create a clear comparison table or structured format
+2. Highlight KEY DIFFERENCES in coverage, limits, deductibles
+3. Note any gaps or overlaps in coverage
+4. Use specific numbers and amounts from the policies
+5. If comparing personal policy to typical coverage, clearly distinguish which is which
+6. If personal policy documents are available, emphasize those in the comparison
+
+**Format your response with**:
+- Clear headings for each policy (distinguish PERSONAL vs GENERAL GUIDE)
+- Side-by-side comparison of key features
+- Bullet points for differences
+- Bold for critical distinctions
+- Summary of recommendations or important findings"""),
             ("user", """Policy Documents:
 {context}
 
 Comparison Request: {query}
 
-Provide a clear comparison across all policies.""")
+Provide a detailed, structured comparison.""")
         ])
         
         llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
