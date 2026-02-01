@@ -1,26 +1,28 @@
-fastapi
-uvicorn
+# Gradio - pinned for compatibility
+gradio==4.44.1
+huggingface-hub>=0.19.0,<0.20.0
+
+# Core dependencies
 python-dotenv
-langchain
+langchain>=0.3.0
 langchain-openai
 langchain-community
 langchain-chroma
 langchain-text-splitters
 langchain-core
+
+# Document processing
 pypdf
-chromadb
-pydantic
+chromadb>=0.5.0
+pydantic>=2.0.0
+
 # Additional document loaders
 docx2txt
 unstructured
 markdown
-# Frontend
-gradio
-requests
+
+# OpenAI
+openai>=1.0.0
+
 # Hybrid Search
 rank-bm25
-# Testing
-pytest
-pytest-asyncio
-# Monitoring
-sqlite3
