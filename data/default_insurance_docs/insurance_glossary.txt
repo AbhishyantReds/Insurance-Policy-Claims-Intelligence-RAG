@@ -1,0 +1,446 @@
+INSURANCE TERMS - COMPLETE GLOSSARY
+
+================================================================================
+ESSENTIAL INSURANCE TERMS
+================================================================================
+
+A
+
+Actual Cash Value (ACV):
+The current value of property after accounting for depreciation. Replacement cost minus depreciation equals actual cash value.
+Example: A 5-year-old laptop originally cost $1,000. ACV might be $400 after depreciation.
+
+Adjuster (Claims Adjuster):
+An insurance company representative who investigates claims, evaluates damage, and determines claim settlements. Can be staff adjusters (employees) or independent adjusters (contractors).
+
+Aggregate Limit:
+The maximum amount an insurance policy will pay for all claims during a policy period (usually one year).
+Example: $1 million aggregate limit means the total of all claims cannot exceed $1 million in that year.
+
+Agent:
+A licensed professional who sells insurance policies. Captive agents represent one insurer, while independent agents represent multiple insurers.
+
+All-Risk Policy (All-Peril):
+Insurance coverage that protects against all causes of loss except those specifically excluded in the policy. More comprehensive than named-peril policies.
+
+Appraisal:
+A process to determine the value of property or resolve disputes about claim amounts. Can involve independent appraisers chosen by both parties.
+
+================================================================================
+B
+
+Beneficiary:
+The person or entity designated to receive insurance proceeds, most commonly in life insurance policies. Can be primary or contingent beneficiaries.
+
+Binder:
+A temporary insurance contract providing immediate coverage until the formal policy is issued. Usually valid for 30-90 days.
+
+Bodily Injury:
+Physical harm to a person, including death, sickness, or disease. Distinguished from property damage.
+
+Broker:
+A licensed insurance professional who represents the buyer (you) rather than insurance companies. Works with multiple insurers to find best coverage.
+
+================================================================================
+C
+
+Cancellation:
+Termination of an insurance policy before its expiration date. Can be initiated by either the insurer or policyholder. State laws govern when and how insurers can cancel.
+
+Catastrophe:
+A single event or series of related events causing severe insured losses, typically affecting many policyholders. Examples: hurricanes, earthquakes, wildfires.
+
+Claim:
+A formal request to an insurance company for payment based on the terms of the policy. Must be for covered losses occurring during the policy period.
+
+Claims-Made Policy:
+Coverage triggered when a claim is made during the policy period, regardless of when the incident occurred. Common in professional liability insurance.
+
+Co-insurance:
+A percentage of costs you share with the insurer after meeting your deductible. Common in health insurance.
+Example: 80/20 co-insurance means insurer pays 80%, you pay 20% of covered expenses.
+
+Collision Coverage:
+Auto insurance covering damage to your vehicle from collisions with other vehicles or objects, regardless of fault.
+
+Comprehensive Coverage:
+Auto insurance covering non-collision damage to your vehicle (theft, vandalism, natural disasters, animals).
+
+Coverage:
+The scope of protection provided by an insurance policy, defining what risks are insured against.
+
+Coverage Limit:
+The maximum amount an insurer will pay for a covered loss. Can be per occurrence, per person, or aggregate.
+
+================================================================================
+D
+
+Declarations Page (Dec Page):
+The first page(s) of an insurance policy summarizing key information: policyholder name, coverage amounts, deductibles, premiums, policy period, and insured property.
+
+Deductible:
+The amount you must pay out-of-pocket before insurance coverage begins. Higher deductibles generally mean lower premiums.
+
+Types:
+- Fixed Dollar: $500, $1,000, $2,500
+- Percentage: 1%, 2%, 5% of insured value
+- Disappearing: Reduces over time without claims
+
+Depreciation:
+Reduction in an asset's value over time due to wear, tear, and obsolescence. Affects actual cash value settlements.
+
+Direct Writer:
+An insurance company that sells policies directly to consumers without agents or brokers, often online or by phone. Example: Geico, Progressive direct sales.
+
+Dwelling Coverage:
+Insurance covering the physical structure of your home, including walls, roof, floors, and built-in systems.
+
+================================================================================
+E
+
+Effective Date:
+The date when insurance coverage begins. Important for determining when losses are covered.
+
+Endorsement (Rider):
+An amendment to an insurance policy that adds, deletes, or modifies coverage. Can expand or restrict policy provisions.
+
+Common endorsements:
+- Scheduled personal property
+- Water backup coverage
+- Equipment breakdown
+- Identity theft coverage
+
+Exclusion:
+Specific conditions, circumstances, or property not covered by an insurance policy. Clearly listed in policy documents.
+
+Examples:
+- Flood damage in homeowners policies
+- Intentional acts
+- War and nuclear hazards
+- Wear and tear
+
+Expiration Date:
+The date when insurance coverage ends. Policies must be renewed before this date to maintain continuous coverage.
+
+Explanation of Benefits (EOB):
+A statement from health insurers detailing what was covered, what was paid, and what you owe. Not a bill.
+
+================================================================================
+F
+
+First-Party Insurance:
+Coverage that pays you (the policyholder) directly for your own losses. Examples: collision, comprehensive, homeowners dwelling coverage.
+
+Flood Insurance:
+Separate coverage for flood damage, typically through FEMA's National Flood Insurance Program or private insurers. Not included in standard homeowners policies.
+
+Fraud:
+Intentional deception to obtain insurance benefits or coverage. Can involve:
+- Falsifying claims
+- Staging accidents
+- Misrepresenting facts on applications
+Results in claim denial, policy cancellation, and potential criminal charges.
+
+================================================================================
+G
+
+Gap Insurance:
+Auto insurance covering the difference between what you owe on a car loan and the vehicle's actual cash value if totaled.
+
+Grace Period:
+Additional time after the premium due date during which you can pay without losing coverage. Typically 10-30 days depending on policy type.
+
+Guaranteed Replacement Cost:
+Coverage that pays to fully rebuild your home regardless of policy limits, even if costs exceed the coverage amount due to inflation or other factors.
+
+================================================================================
+H
+
+Hazard:
+Anything that increases the likelihood or potential severity of a loss. Types include:
+- Physical hazards (icy roads, defective wiring)
+- Moral hazards (intentional carelessness)
+- Morale hazards (indifference to loss because of insurance)
+
+Hold Harmless Agreement:
+A contractual clause where one party agrees not to hold another party responsible for damages or injuries. Common in liability insurance contexts.
+
+================================================================================
+I
+
+Indemnity:
+The principle that insurance should restore you to your financial position before the loss, neither profiting nor suffering loss. Prevents gaining from insured events.
+
+Independent Adjuster:
+A claims adjuster who works as an independent contractor for multiple insurance companies, rather than as an employee of one company.
+
+Insurable Interest:
+A financial stake in the insured property or person. You must stand to suffer financial loss if the insured event occurs. Required to purchase insurance.
+
+Insured:
+The person or entity covered by the insurance policy. Can include named insureds and additional insureds.
+
+Insurer (Insurance Company):
+The company providing insurance coverage and assuming financial risk in exchange for premiums.
+
+================================================================================
+L
+
+Lapse:
+Termination of coverage due to non-payment of premiums. May require reapplication and underwriting to reinstate.
+
+Liability Coverage:
+Insurance protecting you against claims that you're legally responsible for someone else's injuries or property damage.
+
+Two main types:
+- Bodily injury liability
+- Property damage liability
+
+Limits of Liability:
+Maximum amounts an insurer will pay under policy provisions. Can be:
+- Per occurrence
+- Per person
+- Per policy period (aggregate)
+
+Loss:
+Reduction in value of insured property due to a covered peril, or legal liability to others.
+
+Loss of Use:
+Coverage for additional living expenses when your home is uninhabitable due to a covered loss. Pays for:
+- Temporary housing
+- Meals
+- Storage
+- Transportation
+
+================================================================================
+M
+
+Material Misrepresentation:
+A false statement on an insurance application about a fact important to the insurer's decision. Can void coverage.
+
+Medical Payments Coverage:
+Insurance paying medical expenses for injuries, regardless of fault:
+- In auto insurance: covers you and passengers
+- In homeowners: covers guests injured on your property
+
+Moral Hazard:
+Increased risk of loss due to dishonest character or intent. May lead to denial of coverage or claims.
+
+Mortality Table:
+Statistical data showing life expectancy and death rates by age. Used to calculate life insurance premiums.
+
+================================================================================
+N
+
+Named Insured:
+The person or entity specifically identified in the policy declarations as the policyholder. Has full rights under the policy.
+
+Named Peril Policy:
+Insurance covering only specific perils explicitly listed in the policy. Less comprehensive than all-risk policies.
+
+Common named perils:
+- Fire
+- Lightning
+- Wind
+- Hail
+- Theft
+- Vandalism
+
+No-Fault Insurance:
+Auto insurance system where your own insurer pays for your injuries regardless of who caused the accident. Used in some states through Personal Injury Protection (PIP).
+
+Non-Renewal:
+Insurer's decision not to continue coverage at policy expiration. Different from cancellation. Must provide advance notice (30-60 days typically).
+
+================================================================================
+O
+
+Occurrence:
+An accident or continuous exposure to conditions that results in injury or damage. Neither expected nor intended from the insured's standpoint.
+
+Occurrence Policy:
+Coverage triggered when the loss occurs, even if the claim is filed years later. Common in liability insurance.
+
+Out-of-Pocket Maximum:
+The most you'll pay for covered services in a policy period (typically in health insurance). After reaching this limit, insurance pays 100%.
+
+================================================================================
+P
+
+Peril:
+The cause of a possible loss. Examples: fire, wind, theft, collision, flood.
+
+Personal Property:
+Movable belongings not permanently attached to your home. Covered under Coverage C in homeowners policies.
+
+Policy:
+The written contract between insurer and insured outlining coverage, exclusions, conditions, and obligations.
+
+Policy Period:
+The time during which insurance coverage is in effect, typically six months or one year.
+
+Policyholder:
+The person who owns the insurance policy, responsible for paying premiums.
+
+Premium:
+The amount you pay for insurance coverage, typically monthly, quarterly, or annually. Based on risk factors and coverage amounts.
+
+Proof of Loss:
+Documentation submitted to support an insurance claim. May include:
+- Photos
+- Receipts
+- Police reports
+- Medical records
+- Repair estimates
+
+================================================================================
+R
+
+Rate:
+The cost per unit of insurance. Premiums are calculated by applying rates to units of exposure (e.g., per $1,000 of coverage).
+
+Reinstatement:
+Restoring a lapsed or cancelled policy to active status. May require:
+- Payment of back premiums
+- Evidence of insurability
+- New underwriting
+
+Replacement Cost:
+The cost to replace damaged property with new property of similar kind and quality, without deducting for depreciation.
+
+Rider (see Endorsement):
+An addition to a policy providing extra coverage or modifying standard terms.
+
+Risk:
+The chance of loss or the person/property insured. Insurers assess risk to determine premiums.
+
+================================================================================
+S
+
+Scheduled Personal Property:
+Specific valuable items listed individually on your policy with their own coverage amounts. Typically requires appraisals.
+
+Items commonly scheduled:
+- Jewelry
+- Fine art
+- Collectibles
+- Musical instruments
+- Cameras
+
+Self-Insurance:
+Assuming financial responsibility for potential losses instead of transferring risk to an insurer. Setting aside funds to cover potential losses.
+
+Settlement:
+The payment or agreement resolving an insurance claim. Can be:
+- Cash payment
+- Repair/replacement of property
+- Negotiated agreement
+
+Subrogation:
+The insurer's right to recover claim payments from a responsible third party. After paying your claim, the insurer may sue the at-fault party.
+
+Example: Your insurer pays for car damage, then seeks reimbursement from the at-fault driver's insurance.
+
+Surcharge:
+An additional premium charge, often applied after an at-fault accident or traffic violation.
+
+================================================================================
+T
+
+Third-Party Claim:
+A claim made against your insurance by someone else for damages you allegedly caused. Your liability coverage handles third-party claims.
+
+Total Loss:
+When repair costs exceed a percentage of the property's actual cash value (typically 70-80%), or property is completely destroyed. Insurer pays ACV or replacement cost depending on coverage.
+
+================================================================================
+U
+
+Umbrella Policy:
+Liability insurance providing coverage above and beyond standard policies. Typically starts at $1 million and provides:
+- Additional liability coverage
+- Broader coverage than underlying policies
+- Protection against catastrophic losses
+
+Underwriting:
+The process of evaluating risk and determining:
+- Whether to provide coverage
+- Premium amount
+- Coverage terms and conditions
+
+Underwriters review applications, claims history, credit, and other factors.
+
+Uninsured Motorist Coverage:
+Auto insurance protecting you when hit by a driver with no insurance. Covers:
+- Medical expenses
+- Lost wages
+- Pain and suffering
+
+================================================================================
+V
+
+Valuation:
+Determining the worth of property for insurance purposes. Methods include:
+- Replacement cost
+- Actual cash value
+- Agreed value
+- Market value
+
+================================================================================
+W
+
+Waiver:
+Voluntary relinquishment of a known right. Insurance companies may waive certain policy conditions or requirements.
+
+Warranty:
+A statement that certain conditions exist or will be maintained. Breach of warranty can void coverage.
+
+Whole Life Insurance:
+Permanent life insurance providing:
+- Lifetime coverage
+- Cash value accumulation
+- Fixed premiums
+Contrasts with term life insurance.
+
+================================================================================
+KEY ABBREVIATIONS
+================================================================================
+
+ACV - Actual Cash Value
+ALE - Additional Living Expenses
+AOP - All Other Perils
+BI - Bodily Injury
+CLUE - Comprehensive Loss Underwriting Exchange
+DEC - Declarations Page
+DUI/DWI - Driving Under Influence/Driving While Intoxicated
+EOB - Explanation of Benefits
+HO-3 - Standard Homeowners Policy Form
+LOI - Letter of Intent
+MedPay - Medical Payments Coverage
+PD - Property Damage
+PIP - Personal Injury Protection
+UM/UIM - Uninsured/Underinsured Motorist
+WC - Workers' Compensation
+
+================================================================================
+UNDERSTANDING YOUR POLICY
+================================================================================
+
+Every insurance policy contains:
+
+1. Declarations Page: Who, what, when, where, and how much
+2. Insuring Agreement: What the insurer promises to do
+3. Conditions: Your obligations and the insurer's obligations
+4. Exclusions: What is NOT covered
+5. Definitions: Specific meanings of policy terms
+
+Tips for Reading Your Policy:
+
+- Read the entire policy, not just the summary
+- Pay special attention to exclusions
+- Understand your deductibles and limits
+- Know your duties after a loss
+- Ask questions about anything unclear
+- Review annually as circumstances change
+
+Remember: Insurance is a contract. Understanding these terms helps you make informed decisions about your coverage and successfully navigate the claims process when needed.

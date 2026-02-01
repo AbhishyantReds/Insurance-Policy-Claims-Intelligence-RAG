@@ -1,0 +1,37 @@
+# Environment
+.env
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Vector DB (large files, don't commit)
+vectordb/
+
+# Data files - User uploaded documents (but keep default docs)
+data/insurance_policies/
+data/documents/
+*.pdf
+
+# Keep default insurance knowledge base
+!data/default_insurance_docs/
+!data/default_insurance_docs/*.txt
+
+# Gradio temporary files
+.gradio/
+
+# IDE
+.vscode/
+.idea/
+
+# Folders created for organization
+local-backend/
+docs/
+scripts/
+
+# Deployment-specific (separate repos)
+insurance-policy-rag/
+hf_space/

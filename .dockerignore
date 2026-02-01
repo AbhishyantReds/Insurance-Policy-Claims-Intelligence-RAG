@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+
+# Data files (don't include in image)
+data/
+*.pdf
+*.docx
+*.txt
+*.md
+
+# Vector database (will be mounted as volume)
+vectordb/
+*.sqlite3
+
+# Monitoring
+monitoring.db
+monitoring.db-journal
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradio
+.gradio/
+
+# Git
+.git/
+.gitignore

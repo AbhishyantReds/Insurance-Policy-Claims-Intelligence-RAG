@@ -1,0 +1,26 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-openai
+langchain-community
+langchain-chroma
+langchain-text-splitters
+langchain-core
+pypdf
+chromadb
+pydantic
+# Additional document loaders
+docx2txt
+unstructured
+markdown
+# Frontend
+gradio
+requests
+# Hybrid Search
+rank-bm25
+# Testing
+pytest
+pytest-asyncio
+# Monitoring
+sqlite3

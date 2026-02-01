@@ -1,0 +1,27 @@
+# Gradio
+gradio>=4.44.0
+
+# Core dependencies
+python-dotenv
+langchain>=0.3.0
+langchain-openai
+langchain-community
+langchain-chroma
+langchain-text-splitters
+langchain-core
+
+# Document processing
+pypdf
+chromadb>=0.5.0
+pydantic>=2.0.0
+
+# Additional document loaders
+docx2txt
+unstructured
+markdown
+
+# OpenAI
+openai>=1.0.0
+
+# Hybrid Search
+rank-bm25
