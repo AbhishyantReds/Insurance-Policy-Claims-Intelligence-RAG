@@ -17,7 +17,7 @@ from app.config import (
 )
 
 
-def check_retrieval_quality(docs: List[Document]) -> Tuple[bool, float, str]:
+def check_retrieval_quality(docs: List[Document]) -> Tuple[bool, float, str]: #checks if retrieved docs are relevant enough
     """
     Check if retrieved documents have sufficient relevance.
     
@@ -40,7 +40,7 @@ def check_retrieval_quality(docs: List[Document]) -> Tuple[bool, float, str]:
     return True, avg_score, "Retrieval quality is good."
 
 
-def validate_response_faithfulness(
+def validate_response_faithfulness(  #LLM checks another LLM to see if answer is faithful to context    
     answer: str,
     context: str,
     question: str
@@ -121,16 +121,16 @@ def check_for_hallucinated_numbers(answer: str, context: str) -> List[str]:
     Returns:
         List of potentially hallucinated numbers
     """
-    # Extract dollar amounts and policy numbers from answer
-    answer_amounts = re.findall(r'\$[\d,]+(?:\.\d{2})?', answer)
+    # Extract rupee amounts and policy numbers from answer
+    answer_amounts = re.findall(r'₹[\d,]+(?:\.\d{2})?', answer)
     answer_policy_nums = re.findall(r'[A-Z]{2,4}[-\s]?\d{4}[-\s]?\d{4,6}', answer)
     
     hallucinated = []
     
-    # Check if amounts in answer exist in context
+    # Check if rupee amounts in answer exist in context
     for amount in answer_amounts:
         if amount not in context:
-            hallucinated.append(f"Amount {amount} not found in policy documents")
+            hallucinated.append(f"Rupee amount {amount} not found in policy documents")
     
     # Check policy numbers
     for policy_num in answer_policy_nums:

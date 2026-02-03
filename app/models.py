@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 # Ingestion Models
 # ==============================================================================
 
-class IngestResponse(BaseModel):
+class IngestResponse(BaseModel): 
     """Response model for document ingestion endpoint."""
     message: str
     chunks_count: int

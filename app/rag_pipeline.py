@@ -2,8 +2,8 @@
 Insurance Policy RAG Pipeline.
 Handles document ingestion, metadata extraction, and core RAG operations.
 """
-import os
-import re
+import os                           
+import re 
 import pickle
 from typing import List, Dict, Any, Optional, Tuple
 from rank_bm25 import BM25Okapi
@@ -41,7 +41,7 @@ SUPPORTED_FILE_TYPES = {
 }
 
 
-def extract_policy_metadata(text: str, filename: str) -> Dict[str, Any]:
+def extract_policy_metadata(text: str, filename: str) -> Dict[str, Any]: #extracts structured metadata from unstructured text
     """
     Extract metadata from policy document text using regex patterns.
     
@@ -53,7 +53,7 @@ def extract_policy_metadata(text: str, filename: str) -> Dict[str, Any]:
         Dictionary of extracted metadata
     """
     metadata = {
-        "source": filename,
+        "source": filename,             # source pattern
         "policy_type": "unknown",
         "policy_number": None,
         "policyholder": None,
@@ -490,10 +490,10 @@ def _hybrid_retrieve(
     semantic_docs = _semantic_retrieve(query, k * 2, policy_type, policy_number)
     
     # Create hybrid scores
-    doc_scores = {}
+    doc_scores = {}   
     
     # Personal policy boost: 1.5x higher score for personal documents
-    PERSONAL_POLICY_BOOST = 1.5
+    PERSONAL_POLICY_BOOST = 1.5    # v imp and unique
     
     # Add BM25 scores (normalized)
     max_bm25 = max(bm25_scores) if max(bm25_scores) > 0 else 1

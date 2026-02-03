@@ -37,7 +37,7 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# Add CORS middleware for frontend integration
+# Add CORS middleware for frontend integration #CORS is Cross-Origin Resource Sharing, it allows web apps from one domain to access resources from another domain
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Configure appropriately for production
