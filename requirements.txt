@@ -1,5 +1,5 @@
-# Gradio - match HuggingFace SDK version
-gradio==4.44.0
+# Gradio - compatible with huggingface_hub 1.x
+gradio==5.9.1
 
 # Core dependencies
 python-dotenv
