@@ -1,3 +1,16 @@
+---
+title: Insurance Policy RAG QA
+emoji: 🏦
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "4.44.0"
+python_version: "3.11"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # 🏦 Insurance Policy RAG System
 
 An intelligent AI-powered system that answers questions about insurance policies using Retrieval-Augmented Generation (RAG). Built to provide accurate, context-aware answers from both general insurance knowledge and personal policy documents.
