@@ -54,19 +54,19 @@ class TestHallucinationDetection:
     """Test hallucination detection."""
     
     def test_detects_fabricated_amounts(self):
-        """Test detection of dollar amounts not in context."""
-        answer = "The deductible is $5,000"
-        context = "The deductible is $2,500"
+        """Test detection of rupee amounts not in context."""
+        answer = "The deductible is ₹5,000"
+        context = "The deductible is ₹2,500"
         
         hallucinations = check_for_hallucinated_numbers(answer, context)
         
         assert len(hallucinations) > 0
-        assert "$5,000" in hallucinations[0]
+        assert "₹5,000" in hallucinations[0]
     
     def test_accepts_correct_amounts(self):
         """Test that correct amounts are not flagged."""
-        answer = "The deductible is $2,500"
-        context = "The deductible is $2,500 for all covered losses"
+        answer = "The deductible is ₹2,500"
+        context = "The deductible is ₹2,500 for all covered losses"
         
         hallucinations = check_for_hallucinated_numbers(answer, context)
         

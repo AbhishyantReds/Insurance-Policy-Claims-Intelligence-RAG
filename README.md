@@ -1,21 +1,6 @@
----
-title: Insurance Policy RAG QA
-emoji: 🏦
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: "4.44.0"
-python_version: "3.11"
-app_file: app.py
-pinned: false
-license: mit
----
-
 # 🏦 Insurance Policy RAG System
 
 An intelligent AI-powered system that answers questions about insurance policies using Retrieval-Augmented Generation (RAG). Built to provide accurate, context-aware answers from both general insurance knowledge and personal policy documents.
-
-**🚀 [Try it Live on HuggingFace Spaces](https://huggingface.co/spaces/abhireds/insurance-policy-rag)**
 
 ## ✨ Features
 
@@ -258,8 +243,6 @@ docker-compose up --build
 
 ## ☁️ HuggingFace Spaces Deployment
 
-**🎯 Live Demo**: [https://huggingface.co/spaces/abhireds/insurance-policy-rag](https://huggingface.co/spaces/abhireds/insurance-policy-rag)
-
 This project is optimized for HuggingFace Spaces deployment:
 
 1. Create a new Space (Gradio SDK)
@@ -268,6 +251,8 @@ This project is optimized for HuggingFace Spaces deployment:
 4. Space auto-builds with Python 3.11
 5. Default insurance guides are included - ready to query immediately!
 6. Optional: Upload personal policies via Admin tab
+
+**Live Demo**: [https://huggingface.co/spaces/abhireds/insurance-policy-rag](https://huggingface.co/spaces/abhireds/insurance-policy-rag)
 
 ## 🔧 Configuration
 

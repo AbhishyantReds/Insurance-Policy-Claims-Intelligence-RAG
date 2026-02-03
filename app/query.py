@@ -7,9 +7,9 @@ import time
 from typing import Optional, List
 from fastapi import APIRouter, HTTPException
 
-from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
+from langchain_openai import ChatOpenAI #llm from openai
+from langchain_core.prompts import ChatPromptTemplate  #template for chat prompts
+from langchain_core.output_parsers import StrOutputParser #convert llm output to string
 
 from app.config import LLM_MODEL, LLM_TEMPERATURE, DEFAULT_K_RESULTS, MAX_K_RESULTS
 from app.models import (
@@ -17,12 +17,12 @@ from app.models import (
     CoverageCheckRequest, CoverageCheckResponse, ExclusionInfo,
     CompareRequest, CompareResponse, PolicyComparisonItem
 )
-from app.rag_pipeline import (
+from app.rag_pipeline import (    #all the stuff is happening in rag pipeline, the query is just the orchestration.
     retrieve_with_metadata_filter,
     format_docs_with_citations,
     extract_sources_from_docs
 )
-from app.validation import (
+from app.validation import (   #again here its happening in validation module.
     check_retrieval_quality,
     validate_response_faithfulness,
     check_for_hallucinated_numbers,
@@ -45,17 +45,17 @@ INSURANCE_QA_PROMPT = """You are an expert insurance policy analyst. Answer ques
 CRITICAL RULES:
 1. ONLY use information from the provided context. Do not use external knowledge about insurance.
 2. Always cite the specific policy section and page when available (e.g., "Section 3.1, Page 12").
-3. When discussing coverage limits, always include the exact dollar amounts found in the documents.
-4. When discussing deductibles, always include the exact dollar amounts found in the documents.
+3. When discussing coverage limits, always include the exact rupee amounts found in the documents.
+4. When discussing deductibles, always include the exact rupee amounts found in the documents.
 5. If something is NOT covered, clearly state it's an EXCLUSION and cite the exclusion section.
 6. If the information is not found in the provided documents, respond EXACTLY with: "This information is not found in the provided policy documents."
-7. Never fabricate policy numbers, dollar amounts, dates, or any other specific details.
+7. Never fabricate policy numbers, rupee amounts, dates, or any other specific details.
 8. If you're uncertain, say so explicitly.
 
 EXAMPLES OF GOOD ANSWERS:
 
 Q: What is my homeowner's deductible?
-A: According to Section 2, Deductibles (Page 5), your homeowner's insurance deductible is $2,500 for all covered losses.
+A: According to Section 2, Deductibles (Page 5), your homeowner's insurance deductible is ₹2,500 for all covered losses.
 
 Q: Is flood damage covered?
 A: No, flood damage is NOT covered. According to Section 4, Exclusions (Page 8), "We do not cover loss caused by flood, surface water, or water that backs up through sewers or drains."
@@ -80,7 +80,7 @@ CRITICAL RULES:
 1. Carefully check BOTH coverage sections AND exclusion sections.
 2. Exclusions override coverage - if an exclusion applies, the claim is NOT covered.
 3. Be precise about policy section references - cite exact section numbers.
-4. Include exact coverage limits and deductibles ONLY if found in the documents.
+4. Include exact coverage limits and deductibles in rupees (₹) ONLY if found in the documents.
 5. If you cannot determine coverage from the documents, set confidence to "low" and explain why.
 6. Never fabricate policy details, amounts, or section numbers.
 7. Look for specific exclusion language that might apply to the scenario.
@@ -91,7 +91,7 @@ Scenario: "My basement flooded from heavy rain"
 Analysis: Check for water damage coverage AND flood exclusions. If policy excludes "surface water" or "flooding", claim is NOT covered even if water damage is generally covered.
 
 Scenario: "Someone slipped on my icy driveway"
-Analysis: Check liability coverage section. If covered, note the liability limit (e.g., $300,000) and any applicable deductible.
+Analysis: Check liability coverage section. If covered, note the liability limit (e.g., ₹300,000) and any applicable deductible.
 
 POLICY DOCUMENTS:
 {context}
@@ -103,8 +103,8 @@ Analyze this scenario and respond in EXACTLY this JSON format:
     "is_covered": true or false,
     "coverage_determination": "Detailed explanation of why this is or is not covered, citing specific policy sections",
     "policy_section": "Section X.X" or null,
-    "coverage_limit": "$X,XXX" or null,
-    "deductible": "$X,XXX" or null,
+    "coverage_limit": "₹X,XXX" or null,
+    "deductible": "₹X,XXX" or null,
     "exclusions_checked": [
         {{"section": "Section X.X", "description": "Brief description", "applies": true/false}}
     ],
@@ -131,7 +131,7 @@ Provide a comparison in EXACTLY this JSON format:
         {{
             "policy_type": "homeowners/auto/commercial/etc",
             "policy_number": "Policy number if available" or null,
-            "value": "The value being compared (e.g., '$1,000')",
+            "value": "The value being compared (e.g., '₹1,000')",
             "section": "Section reference" or null,
             "notes": "Any relevant notes" or null
         }}
@@ -156,12 +156,12 @@ def query_documents(request: QueryRequest) -> QueryResponse:
     Returns:
         QueryResponse with answer, citations, limits, and sources
     """
-    start_time = time.time()
+    start_time = time.time()     #for monitoring
     metrics_tracker = get_metrics_tracker()
     
     try:
         # Retrieve relevant documents
-        docs = retrieve_with_metadata_filter(
+        docs = retrieve_with_metadata_filter(   #runs hybrid search with metadata filtering and returns top k docs
             query=request.question,
             k=DEFAULT_K_RESULTS,
             policy_type=request.policy_type,
@@ -170,7 +170,7 @@ def query_documents(request: QueryRequest) -> QueryResponse:
         
         # Check retrieval quality
         retrieval_quality = check_retrieval_quality(docs)
-        can_answer, reason = should_answer_question(docs, retrieval_quality)
+        can_answer, reason = should_answer_question(docs, retrieval_quality)  #if confidence is low or no docs, it will not answer and give reason instead, this is to avoid hallucination when we dont have enough context
         
         if not can_answer:
             response_time = time.time() - start_time

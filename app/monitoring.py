@@ -24,7 +24,7 @@ class MetricsTracker:
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
-        # Query logs table
+        # Query logs  detailed log of each query
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS query_logs (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -201,7 +201,7 @@ def load_test_dataset(filepath: str = "data/eval_dataset.json") -> List[Dict[str
             {
                 "question": "What is the homeowner's insurance deductible?",
                 "relevant_sources": ["homeowners_policy.pdf"],
-                "expected_answer": "$2,500"
+                "expected_answer": "₹2,500"
             },
             {
                 "question": "Is flood damage covered?",
