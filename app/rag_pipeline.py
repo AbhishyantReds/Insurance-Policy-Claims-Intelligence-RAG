@@ -29,8 +29,11 @@ from app.config import (
     BM25_INDEX_PATH
 )
 
+# Get the base directory (works both locally and on HuggingFace)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Path to default insurance knowledge documents
-DEFAULT_DOCS_PATH = os.path.join(os.path.dirname(DOCUMENTS_PATH), "default_insurance_docs")
+DEFAULT_DOCS_PATH = os.path.join(BASE_DIR, "data", "default_insurance_docs")
 
 # Supported file extensions and their loaders
 SUPPORTED_FILE_TYPES = {
@@ -181,9 +184,18 @@ def ingest_documents() -> Dict[str, Any]:
     default_docs_count = 0
     personal_docs_count = 0
     
+    # Debug: Print paths
+    print(f"DEBUG: BASE_DIR = {BASE_DIR}")
+    print(f"DEBUG: DEFAULT_DOCS_PATH = {DEFAULT_DOCS_PATH}")
+    print(f"DEBUG: DEFAULT_DOCS_PATH exists = {os.path.exists(DEFAULT_DOCS_PATH)}")
+    
     # Ensure default docs directory exists
     if not os.path.exists(DEFAULT_DOCS_PATH):
+        print(f"WARNING: Default docs path does not exist, creating: {DEFAULT_DOCS_PATH}")
         os.makedirs(DEFAULT_DOCS_PATH)
+    else:
+        files_in_dir = os.listdir(DEFAULT_DOCS_PATH)
+        print(f"DEBUG: Files in DEFAULT_DOCS_PATH: {files_in_dir}")
     
     # Ensure insurance policies directory exists
     if not os.path.exists(INSURANCE_POLICIES_PATH):
