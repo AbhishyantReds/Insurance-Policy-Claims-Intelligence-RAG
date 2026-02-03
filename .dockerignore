@@ -27,8 +27,13 @@ ENV/
 data/
 *.pdf
 *.docx
-*.txt
-*.md
+data/**/*.txt
+data/**/*.md
+
+# Keep requirements files (needed for build)
+!requirements.txt
+!requirements_hf.txt
+!README.md
 
 # Vector database (will be mounted as volume)
 vectordb/
