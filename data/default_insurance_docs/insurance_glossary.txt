@@ -1,446 +1,503 @@
-INSURANCE TERMS - COMPLETE GLOSSARY
+INSURANCE GLOSSARY - INDIAN INSURANCE TERMS
 
 ================================================================================
-ESSENTIAL INSURANCE TERMS
+GENERAL INSURANCE TERMS
 ================================================================================
 
-A
+Actuary (एक्चुअरी):
+A professional who uses mathematics, statistics, and financial theory to study 
+uncertain future events, especially in insurance and pension programs. 
+Determines premium rates and reserves.
 
-Actual Cash Value (ACV):
-The current value of property after accounting for depreciation. Replacement cost minus depreciation equals actual cash value.
-Example: A 5-year-old laptop originally cost $1,000. ACV might be $400 after depreciation.
+Add-On Cover / Rider (ऐड-ऑन कवर):
+Additional coverage purchased along with base policy for extra protection.
+Examples: Zero depreciation, engine protect, critical illness rider.
+Typically costs ₹500 - ₹5,000 extra per year.
 
-Adjuster (Claims Adjuster):
-An insurance company representative who investigates claims, evaluates damage, and determines claim settlements. Can be staff adjusters (employees) or independent adjusters (contractors).
+Agent (एजेंट):
+Licensed individual who sells insurance policies on behalf of insurance company.
+Must pass IRDAI examination. Earns commission on policy sales.
 
-Aggregate Limit:
-The maximum amount an insurance policy will pay for all claims during a policy period (usually one year).
-Example: $1 million aggregate limit means the total of all claims cannot exceed $1 million in that year.
+Annuity (वार्षिकी):
+Regular payment received from an insurance company, typically after retirement.
+Types: Immediate annuity, deferred annuity.
+Rates in India: 5-8% per annum.
 
-Agent:
-A licensed professional who sells insurance policies. Captive agents represent one insurer, while independent agents represent multiple insurers.
+Assignment (समनुदेशन):
+Transfer of policy rights from one person to another.
+Used for loan collateral or ownership transfer.
 
-All-Risk Policy (All-Peril):
-Insurance coverage that protects against all causes of loss except those specifically excluded in the policy. More comprehensive than named-peril policies.
+Beneficiary (लाभार्थी):
+Person designated to receive insurance benefits.
+Also called nominee in life insurance.
 
-Appraisal:
-A process to determine the value of property or resolve disputes about claim amounts. Can involve independent appraisers chosen by both parties.
+Bonus (बोनस):
+Additional amount added to life insurance sum assured.
+Types: Simple reversionary bonus, terminal bonus.
+Declared annually by insurer.
 
-================================================================================
-B
+Cashless Claim (कैशलेस क्लेम):
+Claim settlement where insurer pays hospital/garage directly.
+Policyholder pays only deductible or non-covered items.
+Available at network hospitals/garages.
 
-Beneficiary:
-The person or entity designated to receive insurance proceeds, most commonly in life insurance policies. Can be primary or contingent beneficiaries.
+Claim (दावा):
+Formal request to insurance company for payment under policy terms.
+Must be filed within specified time limit.
+Documents required for processing.
 
-Binder:
-A temporary insurance contract providing immediate coverage until the formal policy is issued. Usually valid for 30-90 days.
+Claim Settlement Ratio (क्लेम सेटलमेंट रेश्यो):
+Percentage of claims paid vs claims received.
+Higher ratio indicates better claim payment record.
+Published by IRDAI annually.
+Good ratio: Above 95%
 
-Bodily Injury:
-Physical harm to a person, including death, sickness, or disease. Distinguished from property damage.
+Co-Insurance (सह-बीमा):
+Sharing of risk between multiple insurers for large risks.
+Also refers to shared payment in health insurance.
 
-Broker:
-A licensed insurance professional who represents the buyer (you) rather than insurance companies. Works with multiple insurers to find best coverage.
+Co-Payment / Co-Pay (सह-भुगतान):
+Fixed percentage of claim amount payable by policyholder.
+Common in health insurance: 10%, 20%, 30%
+Example: ₹1,00,000 bill with 20% co-pay = You pay ₹20,000
 
-================================================================================
-C
+Compulsory Deductible (अनिवार्य कटौती):
+Mandatory amount policyholder must pay before claim.
+Set by IRDAI for motor insurance.
+Private car: ₹1,000, Two-wheeler: ₹100
 
-Cancellation:
-Termination of an insurance policy before its expiration date. Can be initiated by either the insurer or policyholder. State laws govern when and how insurers can cancel.
+Coverage / Cover (कवरेज):
+Protection provided by insurance policy.
+Scope of risks insured against.
 
-Catastrophe:
-A single event or series of related events causing severe insured losses, typically affecting many policyholders. Examples: hurricanes, earthquakes, wildfires.
+Deductible (कटौती):
+Amount you pay before insurance kicks in.
+Higher deductible = Lower premium.
+Example: ₹5,000 deductible means you pay first ₹5,000 of any claim.
 
-Claim:
-A formal request to an insurance company for payment based on the terms of the policy. Must be for covered losses occurring during the policy period.
+Depreciation (मूल्यह्रास):
+Reduction in value due to wear and tear.
+Applied to motor insurance claims.
+Year 1: 5%, Year 2: 10%, Year 3: 15% (for plastic parts)
 
-Claims-Made Policy:
-Coverage triggered when a claim is made during the policy period, regardless of when the incident occurred. Common in professional liability insurance.
+Endorsement (पृष्ठांकन):
+Written amendment to policy terms.
+Changes coverage, premium, or policyholder details.
+Issued during policy period.
 
-Co-insurance:
-A percentage of costs you share with the insurer after meeting your deductible. Common in health insurance.
-Example: 80/20 co-insurance means insurer pays 80%, you pay 20% of covered expenses.
+Exclusions (अपवर्जन):
+Risks or situations NOT covered by policy.
+Listed in policy document.
+Important to read before buying.
 
-Collision Coverage:
-Auto insurance covering damage to your vehicle from collisions with other vehicles or objects, regardless of fault.
+First Party (प्रथम पक्ष):
+The insured person or policyholder.
+Claims made for own losses.
 
-Comprehensive Coverage:
-Auto insurance covering non-collision damage to your vehicle (theft, vandalism, natural disasters, animals).
+Free Look Period (फ्री लुक पीरियड):
+Period to review and return policy.
+Usually 15-30 days from receipt.
+Full refund (minus charges) if cancelled.
 
-Coverage:
-The scope of protection provided by an insurance policy, defining what risks are insured against.
+Grace Period (अनुग्रह अवधि):
+Extra time to pay premium after due date.
+Policy remains active during this period.
+Life insurance: 30 days (annual), 15 days (monthly)
+General insurance: Usually 30 days
 
-Coverage Limit:
-The maximum amount an insurer will pay for a covered loss. Can be per occurrence, per person, or aggregate.
-
-================================================================================
-D
-
-Declarations Page (Dec Page):
-The first page(s) of an insurance policy summarizing key information: policyholder name, coverage amounts, deductibles, premiums, policy period, and insured property.
-
-Deductible:
-The amount you must pay out-of-pocket before insurance coverage begins. Higher deductibles generally mean lower premiums.
-
-Types:
-- Fixed Dollar: $500, $1,000, $2,500
-- Percentage: 1%, 2%, 5% of insured value
-- Disappearing: Reduces over time without claims
-
-Depreciation:
-Reduction in an asset's value over time due to wear, tear, and obsolescence. Affects actual cash value settlements.
-
-Direct Writer:
-An insurance company that sells policies directly to consumers without agents or brokers, often online or by phone. Example: Geico, Progressive direct sales.
-
-Dwelling Coverage:
-Insurance covering the physical structure of your home, including walls, roof, floors, and built-in systems.
-
-================================================================================
-E
-
-Effective Date:
-The date when insurance coverage begins. Important for determining when losses are covered.
-
-Endorsement (Rider):
-An amendment to an insurance policy that adds, deletes, or modifies coverage. Can expand or restrict policy provisions.
-
-Common endorsements:
-- Scheduled personal property
-- Water backup coverage
-- Equipment breakdown
-- Identity theft coverage
-
-Exclusion:
-Specific conditions, circumstances, or property not covered by an insurance policy. Clearly listed in policy documents.
-
-Examples:
-- Flood damage in homeowners policies
-- Intentional acts
-- War and nuclear hazards
-- Wear and tear
-
-Expiration Date:
-The date when insurance coverage ends. Policies must be renewed before this date to maintain continuous coverage.
-
-Explanation of Benefits (EOB):
-A statement from health insurers detailing what was covered, what was paid, and what you owe. Not a bill.
+Group Insurance (समूह बीमा):
+Single policy covering multiple people.
+Common for employees, associations.
+Lower premium per person.
 
 ================================================================================
-F
-
-First-Party Insurance:
-Coverage that pays you (the policyholder) directly for your own losses. Examples: collision, comprehensive, homeowners dwelling coverage.
-
-Flood Insurance:
-Separate coverage for flood damage, typically through FEMA's National Flood Insurance Program or private insurers. Not included in standard homeowners policies.
-
-Fraud:
-Intentional deception to obtain insurance benefits or coverage. Can involve:
-- Falsifying claims
-- Staging accidents
-- Misrepresenting facts on applications
-Results in claim denial, policy cancellation, and potential criminal charges.
-
-================================================================================
-G
-
-Gap Insurance:
-Auto insurance covering the difference between what you owe on a car loan and the vehicle's actual cash value if totaled.
-
-Grace Period:
-Additional time after the premium due date during which you can pay without losing coverage. Typically 10-30 days depending on policy type.
-
-Guaranteed Replacement Cost:
-Coverage that pays to fully rebuild your home regardless of policy limits, even if costs exceed the coverage amount due to inflation or other factors.
-
-================================================================================
-H
-
-Hazard:
-Anything that increases the likelihood or potential severity of a loss. Types include:
-- Physical hazards (icy roads, defective wiring)
-- Moral hazards (intentional carelessness)
-- Morale hazards (indifference to loss because of insurance)
-
-Hold Harmless Agreement:
-A contractual clause where one party agrees not to hold another party responsible for damages or injuries. Common in liability insurance contexts.
-
-================================================================================
-I
-
-Indemnity:
-The principle that insurance should restore you to your financial position before the loss, neither profiting nor suffering loss. Prevents gaining from insured events.
-
-Independent Adjuster:
-A claims adjuster who works as an independent contractor for multiple insurance companies, rather than as an employee of one company.
-
-Insurable Interest:
-A financial stake in the insured property or person. You must stand to suffer financial loss if the insured event occurs. Required to purchase insurance.
-
-Insured:
-The person or entity covered by the insurance policy. Can include named insureds and additional insureds.
-
-Insurer (Insurance Company):
-The company providing insurance coverage and assuming financial risk in exchange for premiums.
-
-================================================================================
-L
-
-Lapse:
-Termination of coverage due to non-payment of premiums. May require reapplication and underwriting to reinstate.
-
-Liability Coverage:
-Insurance protecting you against claims that you're legally responsible for someone else's injuries or property damage.
-
-Two main types:
-- Bodily injury liability
-- Property damage liability
-
-Limits of Liability:
-Maximum amounts an insurer will pay under policy provisions. Can be:
-- Per occurrence
-- Per person
-- Per policy period (aggregate)
-
-Loss:
-Reduction in value of insured property due to a covered peril, or legal liability to others.
-
-Loss of Use:
-Coverage for additional living expenses when your home is uninhabitable due to a covered loss. Pays for:
-- Temporary housing
-- Meals
-- Storage
-- Transportation
-
-================================================================================
-M
-
-Material Misrepresentation:
-A false statement on an insurance application about a fact important to the insurer's decision. Can void coverage.
-
-Medical Payments Coverage:
-Insurance paying medical expenses for injuries, regardless of fault:
-- In auto insurance: covers you and passengers
-- In homeowners: covers guests injured on your property
-
-Moral Hazard:
-Increased risk of loss due to dishonest character or intent. May lead to denial of coverage or claims.
-
-Mortality Table:
-Statistical data showing life expectancy and death rates by age. Used to calculate life insurance premiums.
-
-================================================================================
-N
-
-Named Insured:
-The person or entity specifically identified in the policy declarations as the policyholder. Has full rights under the policy.
-
-Named Peril Policy:
-Insurance covering only specific perils explicitly listed in the policy. Less comprehensive than all-risk policies.
-
-Common named perils:
-- Fire
-- Lightning
-- Wind
-- Hail
-- Theft
-- Vandalism
-
-No-Fault Insurance:
-Auto insurance system where your own insurer pays for your injuries regardless of who caused the accident. Used in some states through Personal Injury Protection (PIP).
-
-Non-Renewal:
-Insurer's decision not to continue coverage at policy expiration. Different from cancellation. Must provide advance notice (30-60 days typically).
-
-================================================================================
-O
-
-Occurrence:
-An accident or continuous exposure to conditions that results in injury or damage. Neither expected nor intended from the insured's standpoint.
-
-Occurrence Policy:
-Coverage triggered when the loss occurs, even if the claim is filed years later. Common in liability insurance.
-
-Out-of-Pocket Maximum:
-The most you'll pay for covered services in a policy period (typically in health insurance). After reaching this limit, insurance pays 100%.
-
-================================================================================
-P
-
-Peril:
-The cause of a possible loss. Examples: fire, wind, theft, collision, flood.
-
-Personal Property:
-Movable belongings not permanently attached to your home. Covered under Coverage C in homeowners policies.
-
-Policy:
-The written contract between insurer and insured outlining coverage, exclusions, conditions, and obligations.
-
-Policy Period:
-The time during which insurance coverage is in effect, typically six months or one year.
-
-Policyholder:
-The person who owns the insurance policy, responsible for paying premiums.
-
-Premium:
-The amount you pay for insurance coverage, typically monthly, quarterly, or annually. Based on risk factors and coverage amounts.
-
-Proof of Loss:
-Documentation submitted to support an insurance claim. May include:
-- Photos
-- Receipts
-- Police reports
-- Medical records
-- Repair estimates
-
-================================================================================
-R
-
-Rate:
-The cost per unit of insurance. Premiums are calculated by applying rates to units of exposure (e.g., per $1,000 of coverage).
-
-Reinstatement:
-Restoring a lapsed or cancelled policy to active status. May require:
-- Payment of back premiums
-- Evidence of insurability
-- New underwriting
-
-Replacement Cost:
-The cost to replace damaged property with new property of similar kind and quality, without deducting for depreciation.
-
-Rider (see Endorsement):
-An addition to a policy providing extra coverage or modifying standard terms.
-
-Risk:
-The chance of loss or the person/property insured. Insurers assess risk to determine premiums.
-
-================================================================================
-S
-
-Scheduled Personal Property:
-Specific valuable items listed individually on your policy with their own coverage amounts. Typically requires appraisals.
-
-Items commonly scheduled:
-- Jewelry
-- Fine art
-- Collectibles
-- Musical instruments
-- Cameras
-
-Self-Insurance:
-Assuming financial responsibility for potential losses instead of transferring risk to an insurer. Setting aside funds to cover potential losses.
-
-Settlement:
-The payment or agreement resolving an insurance claim. Can be:
-- Cash payment
-- Repair/replacement of property
-- Negotiated agreement
-
-Subrogation:
-The insurer's right to recover claim payments from a responsible third party. After paying your claim, the insurer may sue the at-fault party.
-
-Example: Your insurer pays for car damage, then seeks reimbursement from the at-fault driver's insurance.
-
-Surcharge:
-An additional premium charge, often applied after an at-fault accident or traffic violation.
-
-================================================================================
-T
-
-Third-Party Claim:
-A claim made against your insurance by someone else for damages you allegedly caused. Your liability coverage handles third-party claims.
-
-Total Loss:
-When repair costs exceed a percentage of the property's actual cash value (typically 70-80%), or property is completely destroyed. Insurer pays ACV or replacement cost depending on coverage.
-
-================================================================================
-U
-
-Umbrella Policy:
-Liability insurance providing coverage above and beyond standard policies. Typically starts at $1 million and provides:
-- Additional liability coverage
-- Broader coverage than underlying policies
-- Protection against catastrophic losses
-
-Underwriting:
-The process of evaluating risk and determining:
-- Whether to provide coverage
-- Premium amount
-- Coverage terms and conditions
-
-Underwriters review applications, claims history, credit, and other factors.
-
-Uninsured Motorist Coverage:
-Auto insurance protecting you when hit by a driver with no insurance. Covers:
-- Medical expenses
-- Lost wages
-- Pain and suffering
-
-================================================================================
-V
-
-Valuation:
-Determining the worth of property for insurance purposes. Methods include:
-- Replacement cost
-- Actual cash value
-- Agreed value
-- Market value
-
-================================================================================
-W
-
-Waiver:
-Voluntary relinquishment of a known right. Insurance companies may waive certain policy conditions or requirements.
-
-Warranty:
-A statement that certain conditions exist or will be maintained. Breach of warranty can void coverage.
-
-Whole Life Insurance:
-Permanent life insurance providing:
-- Lifetime coverage
-- Cash value accumulation
-- Fixed premiums
-Contrasts with term life insurance.
-
-================================================================================
-KEY ABBREVIATIONS
+LIFE INSURANCE TERMS
 ================================================================================
 
-ACV - Actual Cash Value
-ALE - Additional Living Expenses
-AOP - All Other Perils
-BI - Bodily Injury
-CLUE - Comprehensive Loss Underwriting Exchange
-DEC - Declarations Page
-DUI/DWI - Driving Under Influence/Driving While Intoxicated
-EOB - Explanation of Benefits
-HO-3 - Standard Homeowners Policy Form
-LOI - Letter of Intent
-MedPay - Medical Payments Coverage
-PD - Property Damage
-PIP - Personal Injury Protection
-UM/UIM - Uninsured/Underinsured Motorist
-WC - Workers' Compensation
+Assured / Life Assured (बीमित):
+Person whose life is insured under the policy.
+Benefits paid on death of life assured.
+
+Death Benefit (मृत्यु लाभ):
+Amount paid to nominee on death of life assured.
+Equals sum assured plus accumulated bonuses.
+
+Endowment Policy (एंडोमेंट पॉलिसी):
+Life insurance with savings component.
+Pays on death OR maturity, whichever earlier.
+Returns: 4-6% typically.
+
+Human Life Value (HLV) (मानव जीवन मूल्य):
+Economic value of a person based on earning capacity.
+Used to determine adequate life cover.
+Formula: Annual income × Years to retirement
+
+Lapsed Policy (व्यपगत पॉलिसी):
+Policy terminated due to non-payment of premium.
+Can be revived within specified period (2-5 years).
+Revival requires payment of arrears plus interest.
+
+Maturity (परिपक्वता):
+End of policy term when benefits become payable.
+Maturity benefit = Sum assured + bonuses.
+Tax-free under Section 10(10D) if conditions met.
+
+Money-Back Policy (मनी-बैक पॉलिसी):
+Periodic payouts during policy term.
+Survival benefits at regular intervals.
+Lower effective returns than endowment.
+
+Mortality Charge (मृत्यु दर प्रभार):
+Cost of life insurance protection.
+Deducted in ULIPs and term insurance.
+Increases with age.
+
+NAV (Net Asset Value):
+Value per unit of ULIP fund.
+Calculated daily based on fund portfolio.
+NAV = (Total Assets - Liabilities) / Number of Units
+
+No Claim Bonus (NCB) - Life:
+Increase in sum assured for claim-free years.
+Health insurance: 5-50% cumulative increase.
+
+Nominee (नामांकित व्यक्ति):
+Person designated to receive death benefit.
+Can be changed anytime during policy term.
+If minor, appointee must be named.
+
+Paid-Up Policy (प्रदत्त पॉलिसी):
+Policy where premium payment stops but coverage continues.
+Reduced sum assured based on premiums paid.
+Benefits proportionately reduced.
+
+Policy Term (पॉलिसी अवधि):
+Duration of insurance coverage.
+Term insurance: 10-40 years.
+Endowment: 10-30 years.
+
+Premium (प्रीमियम):
+Amount paid to insurer for coverage.
+Payment modes: Annual, half-yearly, quarterly, monthly.
+Can be single pay or regular pay.
+
+Proposer (प्रस्तावक):
+Person who applies for insurance.
+May be same as life assured or different.
+Legally bound by policy terms.
+
+Revival (पुनरुद्धार):
+Reinstating a lapsed policy.
+Requires payment of dues plus interest.
+May need fresh medical examination.
+
+Rider (राइडर):
+Additional benefit attached to base policy.
+Examples: Accidental death, critical illness.
+Extra premium charged.
+
+Sum Assured (बीमित राशि):
+Guaranteed amount payable under policy.
+Base amount before bonuses.
+Death benefit never less than sum assured.
+
+Surrender (समर्पण):
+Termination of policy before maturity.
+Surrender value paid to policyholder.
+Usually much less than premiums paid.
+Minimum 3 years premium required.
+
+Surrender Value (समर्पण मूल्य):
+Cash value if policy terminated early.
+GSV: Guaranteed Surrender Value.
+SSV: Special Surrender Value.
+
+Term Insurance (टर्म बीमा):
+Pure protection, no maturity benefit.
+Death benefit only if insured dies during term.
+Most affordable life insurance.
+Example: ₹1 crore for ₹10,000/year.
+
+ULIP (Unit Linked Insurance Plan):
+Insurance cum investment product.
+Premium invested in market-linked funds.
+5-year lock-in period.
+Returns depend on market performance.
+
+Underwriting (अंडरराइटिंग):
+Risk assessment process by insurer.
+Determines premium and acceptance.
+Based on age, health, lifestyle, occupation.
+
+Vesting Age (निहित आयु):
+Age when policy benefits become payable.
+Usually 18 years for child policies.
+60-70 years for pension policies.
 
 ================================================================================
-UNDERSTANDING YOUR POLICY
+HEALTH INSURANCE TERMS
 ================================================================================
 
-Every insurance policy contains:
+Cashless Hospitalization:
+Treatment at network hospital without upfront payment.
+Insurer settles directly with hospital.
+Show health card at admission.
 
-1. Declarations Page: Who, what, when, where, and how much
-2. Insuring Agreement: What the insurer promises to do
-3. Conditions: Your obligations and the insurer's obligations
-4. Exclusions: What is NOT covered
-5. Definitions: Specific meanings of policy terms
+Claim Form:
+Document to be filled for claim processing.
+Available from insurer or TPA.
+Must be submitted with supporting documents.
 
-Tips for Reading Your Policy:
+CIBIL Score:
+Not directly related to health insurance.
+But affects loan-linked insurance products.
 
-- Read the entire policy, not just the summary
-- Pay special attention to exclusions
-- Understand your deductibles and limits
-- Know your duties after a loss
-- Ask questions about anything unclear
-- Review annually as circumstances change
+Copayment:
+Fixed percentage paid by insured.
+Common: 10%, 20%
+Higher for senior citizens.
 
-Remember: Insurance is a contract. Understanding these terms helps you make informed decisions about your coverage and successfully navigate the claims process when needed.
+Cumulative Bonus:
+Increase in sum insured for claim-free years.
+Usually 5% per year, up to 50%.
+Lost or reduced on making claims.
+
+Day Care Procedure:
+Treatment not requiring 24-hour hospitalization.
+Covered under health insurance.
+Examples: Cataract surgery, dialysis, chemotherapy.
+
+Domiciliary Hospitalization:
+Treatment at home when hospital not available.
+Covered under some policies.
+Conditions apply.
+
+Exclusion Period:
+Waiting period for specific conditions.
+Pre-existing diseases: 2-4 years.
+Specific ailments: 1-2 years.
+
+Family Floater:
+Single policy covering entire family.
+Shared sum insured among members.
+Cost-effective for families.
+
+Hospital Network:
+List of hospitals with cashless facility.
+Check before buying policy.
+Multi-city network preferred.
+
+ICU (Intensive Care Unit):
+Critical care unit in hospital.
+Higher daily charges.
+Sub-limits may apply.
+
+In-Patient:
+Person admitted to hospital.
+Minimum 24-hour stay for coverage.
+Includes room, treatment, medicines.
+
+Incurred Claim Ratio (ICR):
+Claims incurred vs premiums earned.
+Indicates underwriting performance.
+Healthy range: 50-80%.
+
+OPD (Out-Patient Department):
+Treatment without hospitalization.
+Generally NOT covered.
+Some premium policies include OPD.
+
+Pre-Authorization:
+Approval from insurer before hospitalization.
+Required for cashless claims.
+Usually 2-4 hours for approval.
+
+Pre-Existing Disease (PED):
+Condition existing before policy purchase.
+Waiting period: 2-4 years.
+Must be disclosed at purchase.
+
+Pre-Hospitalization:
+Expenses before hospital admission.
+Usually 30-60 days covered.
+Consultations, tests, medicines.
+
+Post-Hospitalization:
+Expenses after discharge.
+Usually 60-180 days covered.
+Follow-up visits, medicines.
+
+Reimbursement:
+Payment after policyholder pays hospital.
+Submit bills for claim.
+Settlement in 15-30 days.
+
+Restoration Benefit:
+Sum insured restored if exhausted.
+Useful for multiple claims in year.
+May be automatic or on fresh illness.
+
+Room Rent Limit:
+Maximum daily room charges covered.
+Common: ₹3,000-₹10,000 per day.
+Or 1-2% of sum insured.
+Proportionate deduction if exceeded.
+
+Sub-Limit:
+Cap on specific expenses.
+Room rent, ICU, specific treatments.
+Read carefully in policy.
+
+Sum Insured:
+Maximum coverage amount per year.
+Recommended: ₹5,00,000 - ₹25,00,000 for metros.
+Restore feature increases effective cover.
+
+TPA (Third Party Administrator):
+Company managing claims for insurer.
+Issues health cards.
+Processes cashless claims.
+
+Waiting Period:
+Time before coverage becomes active.
+Initial waiting: 30 days.
+PED waiting: 2-4 years.
+Specific disease: 1-2 years.
+
+================================================================================
+MOTOR INSURANCE TERMS
+================================================================================
+
+Accident Cover:
+Protection against accident-related losses.
+Personal accident: Injury to self.
+Third-party: Injury/damage to others.
+
+Comprehensive Policy:
+Covers own damage plus third-party.
+Most complete motor coverage.
+Includes theft, fire, natural disasters.
+
+IDV (Insured Declared Value):
+Maximum claim for total loss/theft.
+Based on depreciated vehicle value.
+Review and agree at purchase.
+
+Liability Only / Third Party:
+Mandatory minimum coverage.
+Covers third-party injury/death/damage.
+Does NOT cover own vehicle.
+
+NCB (No Claim Bonus):
+Discount for claim-free years.
+20% after year 1, up to 50% after 5 years.
+Transferable to new vehicle/insurer.
+Lost if claim made.
+
+Network Garage:
+Authorized repair shop.
+Cashless repairs available.
+Quality assured by insurer.
+
+OD (Own Damage):
+Damage to own vehicle.
+Separate from third-party cover.
+Can be bought standalone (since 2019).
+
+PA (Personal Accident):
+Cover for driver/owner injuries.
+Mandatory ₹15 lakh for owner-driver.
+Optional for passengers.
+
+Zero Depreciation:
+Full claim without depreciation deduction.
+Ideal for new vehicles (1-5 years).
+Higher premium.
+
+================================================================================
+REGULATORY AND LEGAL TERMS
+================================================================================
+
+IRDAI (Insurance Regulatory and Development Authority of India):
+Insurance sector regulator.
+Established: 1999.
+Headquarters: Hyderabad.
+Functions: Licensing, regulation, consumer protection.
+
+Motor Vehicles Act, 1988:
+Law mandating motor insurance.
+Third-party insurance compulsory.
+Penalties for uninsured vehicles.
+
+Section 80C:
+Income Tax deduction for life insurance premium.
+Limit: ₹1,50,000 per year.
+
+Section 80D:
+Income Tax deduction for health insurance premium.
+Self/family: ₹25,000 (₹50,000 for seniors).
+Parents: Additional ₹25,000-₹50,000.
+
+Section 10(10D):
+Tax exemption on life insurance maturity.
+Conditions apply based on premium to sum assured ratio.
+
+Policy Document (पॉलिसी दस्तावेज़):
+Legal contract between insurer and insured.
+Contains all terms, conditions, exclusions.
+Read carefully before signing.
+
+Proposal Form:
+Application for insurance.
+Contains declarations by proposer.
+Basis of policy contract.
+
+Schedule:
+Summary page of policy.
+Contains key details: Sum insured, premium, period.
+Specific terms for the policy.
+
+================================================================================
+COMMON ABBREVIATIONS
+================================================================================
+
+AML - Anti-Money Laundering
+FIR - First Information Report
+GIC - General Insurance Corporation
+GST - Goods and Services Tax (18% on premium)
+HLV - Human Life Value
+IRDA/IRDAI - Insurance Regulatory and Development Authority of India
+KYC - Know Your Customer
+LIC - Life Insurance Corporation of India
+NAV - Net Asset Value
+NCB - No Claim Bonus
+NCD - No Claim Discount
+OPD - Out-Patient Department
+PA - Personal Accident
+PED - Pre-Existing Disease
+PMJAY - Pradhan Mantri Jan Arogya Yojana (Ayushman Bharat)
+SI - Sum Insured
+TPA - Third Party Administrator
+ULIP - Unit Linked Insurance Plan
+
+================================================================================
+CURRENCY AND AMOUNT REFERENCES
+================================================================================
+
+Standard Format in India:
+- Thousand: ₹1,000
+- Lakh: ₹1,00,000 (One Lakh = 100,000)
+- Crore: ₹1,00,00,000 (One Crore = 10 Million)
+
+Common Insurance Amounts:
+- Term Insurance: ₹50,00,000 - ₹10,00,00,000 (50 lakhs - 10 crores)
+- Health Insurance: ₹5,00,000 - ₹1,00,00,000 (5 lakhs - 1 crore)
+- Motor Insurance (Car IDV): ₹3,00,000 - ₹50,00,000 (3 - 50 lakhs)
+- Home Insurance: ₹25,00,000 - ₹2,00,00,000 (25 lakhs - 2 crores)
+
+Premium Ranges:
+- Term Insurance (₹1 crore): ₹8,000 - ₹20,000/year
+- Health Insurance (₹10 lakh): ₹10,000 - ₹25,000/year
+- Motor Insurance (Car): ₹8,000 - ₹50,000/year
+- Home Insurance: ₹3,000 - ₹15,000/year
+
