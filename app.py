@@ -484,11 +484,28 @@ with gr.Blocks(title="Insurance Policy RAG", theme=gr.themes.Soft()) as demo:
 
 # Auto-ingest default documents on first load
 def auto_ingest_on_load():
-    """Auto-ingest default documents if vector DB doesn't exist."""
+    """Auto-ingest default documents if vector DB doesn't exist or is empty."""
     from app.config import VECTOR_DB_PATH
     chroma_db_file = os.path.join(VECTOR_DB_PATH, "chroma.sqlite3")
     
+    needs_ingestion = False
+    
+    # Check if DB file exists
     if not os.path.exists(chroma_db_file):
+        needs_ingestion = True
+        print("📚 Vector database not found.")
+    else:
+        # Check if we can actually retrieve documents
+        try:
+            test_docs = retrieve_with_metadata_filter("insurance", k=1)
+            if not test_docs:
+                needs_ingestion = True
+                print("📚 Vector database exists but is empty.")
+        except Exception as e:
+            needs_ingestion = True
+            print(f"📚 Vector database check failed: {e}")
+    
+    if needs_ingestion:
         print("\n" + "="*80)
         print("📚 First-time setup: Auto-ingesting default insurance documents...")
         print("="*80)
@@ -500,7 +517,11 @@ def auto_ingest_on_load():
             print("="*80 + "\n")
         except Exception as e:
             print(f"⚠️ Auto-ingestion failed: {str(e)}")
+            import traceback
+            traceback.print_exc()
             print("   You can manually ingest using the Admin tab\n")
+    else:
+        print("✅ Vector database ready with documents.")
 
 if __name__ == "__main__":
     # Run auto-ingestion on startup
