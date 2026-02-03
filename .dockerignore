@@ -23,12 +23,15 @@ ENV/
 .env
 .env.local
 
-# Data files (don't include in image)
-data/
+# Data files (don't include user data in image, but keep default docs)
+data/insurance_policies/
+data/documents/
 *.pdf
 *.docx
-data/**/*.txt
-data/**/*.md
+
+# Keep default insurance knowledge base
+!data/default_insurance_docs/
+!data/default_insurance_docs/*.txt
 
 # Keep requirements files (needed for build)
 !requirements.txt
